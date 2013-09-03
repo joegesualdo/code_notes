@@ -7,7 +7,7 @@
 // Add an event parameter within an event handler, then we use preventDefault on the event. This prevents the browsers default behavior, which is popping up to the top of page since href was a #
 $('.vacation').on('click', '.expand', function(event){
 	event.preventDefault(); //This stops the default browser action of popping up to top when href="#"
-	$(this).closest('.vacation').find('.commets').fadeToggle();
+	$(this).closest('.vacation').find('.comments').fadeToggle();
 })
 
 
@@ -69,7 +69,7 @@ $("li").first().next().prev();
 // How to traverse up the DOM
 $("li").first().parent(); // This will return the parent of the li element
 //
-$(this).parents('.vacation').append(price); // finds the vacation class above 'this'
+$(this).parent('.vacation').append(price); // finds the vacation class above 'this'
 // How to walk up the dom to look for a certain ancestor that is closes to the element?
 $(this).closest('.vacation').append(price); // finds the closestvacation class above 'this'. Which is great in case you have multiple vacation classses
 // .closest is always going to be find 0 or 1, opposed to .parent that will find ALL of the ancestors with the proper class

@@ -1,0 +1,52 @@
+// What does Sass stand for?
+// How to import other scss files?
+// How do we create a partial? Why would we create and import a partial instead of a seperate file?
+// What is a reference selector?
+// How to create a hover effect in Sass?
+// How do you create variables in Sass?
+// What does !default do in Sass?
+// What type of varables can we store in variables
+// If we change a variable wihtin a declaration, does the variable change globally?
+// How do you do interpolation in Sass?
+MIXINS
+// What is a mixin and when should they be used?
+// How do you create and use a mixin that takes an argument? What about a mixin that takes 2 arguments?
+// How do you set default values for a mixin?
+// If you have more than one argument being passed to a mixin, optional arguments with defaults must come at the ___ of the arguments?
+// When we have a mixin that takes multiple argument but we don't remember the order of the arguments, what can we do?
+// When we are passing in an argument to a mixin and the argument has a comma, what do we do?
+EXTEND
+// What does extend do and when should it be used in Sass?
+// How do you extend properties from one element to another?
+// What is a placeholder and why would you use it?
+// How do you extend a placeholder?
+FUNCTIONS
+// How would you create a function in Sass?
+// Create a function called 'fluidize' that takes in two arguments: target and context, and that return the fluid width.
+// How do you do and if else in Sass. How would you also have and else if in the if else?
+// How would you loop through a list in Sass?
+// How to do a for loop in Sass?
+// How to do a While statement in Sass?
+MATH
+// How do you concatenate two strings in Sass?
+// What function rounds to the nearest whole number?
+// What funciton rounds up?
+// What function rounds down?
+// What funciton finds the absolute values?
+// What functions finds the minimum number in a list?
+// What funciton finds the maximum number in a list?
+// What function converts a number to a percentage?
+// How would you call one of the above functions?
+Colors
+// How would you use a hex color in rgba()?
+// How would you lighten a color by 20%?
+// How would you darken a color by 20%?
+// How would you saturate a color by 20% to give us more intense color?
+// How would you desaturate a color by 20% to give us less intense color?
+// How would you mix two colors?
+// How would you mix two colors, but mix them with 30% of the first and 70% of the second?
+// how do you get the grayscale of a color?
+// How do you invert a color? What does inverting do?
+// How do you find the complimentary color of a particular color?
+
+

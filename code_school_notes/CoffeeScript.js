@@ -111,7 +111,7 @@ else
 // Or
 if age < 18 then alert 'Under age' else alert 'of age' // This is how to get if, else on one line
 
-// Coffee script doesn't have any ternary operator. SO can use ? or :
+// Coffee script doesn't have any ternary operator. SO cant use ? or :
 // Example of ternary in JS: http://msdn.microsoft.com/en-us/library/ie/be21c7hw(v=vs.94).aspx
 // The ?: operator can be used as a shortcut for an if...else statement. It is typically used as part of a larger 
 // expression where an if...else statement would be awkward. For example:
@@ -127,7 +127,7 @@ var greeting = "Good" + ((now.getHours() > 17) ? " evening." : " day.");
 // JS: false // CS: false OR no OR off
 
 // Example of coffeescript operators:
-if paid() and coffee() is on then pour() // is on is checking truthiness
+if paid() and coffee() is on then pour() // 'is on' is checking truthiness
 
 addCaffeine() if not Decaf()
 // OR

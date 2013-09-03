@@ -2,7 +2,8 @@
 
 # Unit Tests are tests for the models
 
-# if a instance of a class doesn't get created, you can call .invalid? on it, as well as .errors[:attrubute].any?
+# if a instance of a class doesn't get created, you can call .invalid? on it, as well as 
+# .errors[:attrubute].any?
 product = Product.create
 assert product.invalid?
 assert product.errors
@@ -54,14 +55,17 @@ button_to 'Add to Cart', line_items_path(:product_id => product )
 
 
 # What is the params object
-# the params object is important inside Rails applications. It holds all of the parameters passed in a browser request
+# the params object is important inside Rails applications. It holds all of the parameters 
+# passed in a browser request
 
 
 find_by_column_name #this is an active record method. one of the dynamic finders
 
 #What is a flash message?
-# Rails convenient way of dealing with errors and error reporting. It defines a structure called a flash. A flash is a bucket 
-# ( or hash) in which you can store stuff as you process a request. The contents of the flash are available to the next request in teh 
+# Rails convenient way of dealing with errors and error reporting. It defines a 
+# structure called a flash. A flash is a bucket 
+# ( or hash) in which you can store stuff as you process a request. The contents of the 
+# flash are available to the next request in teh 
 # session beore being deleted automatically
 # Typically used to collect error messages
 
@@ -88,11 +92,11 @@ end
 
 # What is a partial
 # Partials are a kind of method for views. A partial is simply a chunk of view in its own seperate file
-# You can invoke (render) them from another template or from a controller. As with methods, you can pass paramaters
-# to a partial, so the same partial can render different results
+# You can invoke (render) them from another template or from a controller. As with methods, 
+# you can pass paramaters to a partial, so the same partial can render different results
 
-# you can pass a collection to a render method, and it will find the corresponding partial and loop through each collection
-# item and render the partial
+# you can pass a collection to a render method, and it will find the corresponding partial 
+# and loop through each collection item and render the partial
 # Change this:
   <% @cart.line_items.each do |item| %>
       <tr>
@@ -121,10 +125,11 @@ end
   </td>
 </tr>
 ## How to name partials:
-# The partial template itself is simply another template file (by default in the same directory as the object being rendered
-# and with the name of the table as the name). Howerver to keep the names of partials distrinct from regualt templates, Rails
-# automatically  prepends an undrscore to the partial name when looking for the file. That means we need to name our partial
-# _line_item.html.erb and place it in the app/views/line_items directory
+# The partial template itself is simply another template file (by default in the same 
+# directory as the object being rendered and with the name of the table as the name). 
+# Howerver to keep the names of partials distrinct from regualt templates, Rails automatically  
+# prepends an undrscore to the partial name when looking for the file. That means we need to 
+# name our partial _line_item.html.erb and place it in the app/views/line_items directory
 
 #Can do the same thing with cart partial
 render @cart
@@ -158,9 +163,9 @@ $('#cart').html("<%= j render(@cart) %>") # j is short for escape javascript
 
 
 # What is a mailer
-# A class that's sotred in the app/mailers directory. It containes one or more methods wtih each mehtod corresponding to an
-# email template. To create the body of the email, these methods in turn use views.
-rails g mailer Notifier order_received order_shipped
+# A class that's sotred in the app/mailers directory. It containes one or more methods 
+# wtih each mehtod corresponding to an email template. To create the body of the email, these 
+# methods in turn use views. rails g mailer Notifier order_received order_shipped
 
 # in mailer, we have mail instead of render
 # mail takes parameters like to:

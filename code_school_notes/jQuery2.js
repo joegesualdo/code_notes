@@ -27,7 +27,7 @@ $("#tabs li:eq(2) a").click(); // Selects the 3rd element, since first is eq(0)
 function showNumberOfFlights(e){
 	var num_flights = $(this).data('flights');
 	$(this).append("<span class='tooltip'>" + num_flights + " flights</span>");
-}
+};
 function hideNumberOfFlights(e){
 	$("#tabs span.tooltip").remove();
 }
