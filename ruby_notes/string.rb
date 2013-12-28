@@ -90,7 +90,9 @@ spacer.squeeze(' ') #=> "Crazy Spaces Here"
 
 full_name = first + " " + last
 full_name = %-#{first} #{last}-
+full_name = first << " " << last #=> BUT this will change the value of first
 
+full_name['Joe'] = %{Michael} #=> full_name == Michael Gesualdo 
 full_name.split(" ")
 full_name.match(/\W\S*/) #=> returns a MatchData object, which encapsulates all the results of a pattern match
 full_name.scan(/\W\S*/) #=> takes a Regex and returns an Array of everything that matches
