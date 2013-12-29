@@ -65,6 +65,7 @@ last = %-Gesualdo-
 first = %:Joe:
 last = "Gesualdo"
 
+first[0] #=> J
 first.length
 first.reverse
 first * 5
